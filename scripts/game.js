@@ -10,7 +10,7 @@ function resetGameStatus() {
   for (let i = 0; i < 3; i++) {
     for (let j = 0; j < 3; j++) {
       gameData[i][j] = 0;
-      const gameBoardItemElement = gameAreaElement.children[gameBoardIndex];
+      const gameBoardItemElement = gameBoardElement.children[gameBoardIndex];
       gameBoardItemElement.textContent = '';
       gameBoardItemElement.classList.remove('disabled');
       gameBoardIndex++;
